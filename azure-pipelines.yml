@@ -10,5 +10,5 @@ variables:
   imageName: ' azure-vote-back:$(build.buildId)'
 
 steps:
-- script: docker build -f Dockerfile -t $(azure-vote-front) .
+- script: docker build -f Dockerfile -t $(build.buildId) .
   displayName: 'docker build'
